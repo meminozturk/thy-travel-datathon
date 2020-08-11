@@ -32,12 +32,12 @@ Approximately 60% of the data consists of categorical variables with too many le
 
 As can be seen in the graph below, the average passenger numbers of the values in the "HUB" variable are shown in blue. When these values are used directly, our model has the risk of overlooking different situations as it focuses entirely on the available data. Therefore, by using the method in the article, we obtain the values shown in orange with the smoothing way and include them in our model.
 
-![Target Encoding](target_encoding.PNG)
+![Target Encoding](target_encoding.png)
 
 The frequency encoding method was also used in the model as in the formula below to include how much the values in each categorical variable are repeated in the data.
 
-![Frequency Encoding Formula](frequency_encoding_formula.PNG)
+![Frequency Encoding Formula](frequency_encoding_formula.png)
 
-![Frequency Encoding](frequency_encoding.PNG)
+![Frequency Encoding](frequency_encoding.png)
 
 
