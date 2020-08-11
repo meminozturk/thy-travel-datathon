@@ -28,9 +28,16 @@ First, we obtained a model with an RMSE score of 2.628596 by applying the Lightg
 
 Approximately 60% of the data consists of categorical variables with too many levers. When tree-based algorithms such as Lightgbm we use work on these types of variables, there is a risk of overfitting, so the target encoding method has been applied by applying the article with the reference below in order to digitize these non-numeric variables. The difference of this method from using the average number of passengers of each variable instead of the variable is to reduce the possibility of overfitting by multiplying it by the smoothing coefficient as in the method described below.
 
-![Target Encoding Formula](target_encoding_formula.png)
+![Target Encoding Formula](target_encoding_formula.PNG)
 
 As can be seen in the graph below, the average passenger numbers of the values in the "HUB" variable are shown in blue. When these values are used directly, our model has the risk of overlooking different situations as it focuses entirely on the available data. Therefore, by using the method in the article, we obtain the values shown in orange with the smoothing way and include them in our model.
 
+![Target Encoding](target_encoding.PNG)
+
+The frequency encoding method was also used in the model as in the formula below to include how much the values in each categorical variable are repeated in the data.
+
+![Frequency Encoding Formula](frequency_encoding_formula.PNG)
+
+![Frequency Encoding](frequency_encoding.PNG)
 
 
