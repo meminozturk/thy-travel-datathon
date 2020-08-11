@@ -40,4 +40,12 @@ The frequency encoding method was also used in the model as in the formula below
 
 ![Frequency Encoding](frequency_encoding.png)
 
+Our tests were applied on all data and the RMSE value of 2.4135 was obtained. You can see the most important variables of the latest model below.
+
+![Feature Importances](feature_importances.png)
+
+Thanks,
+
+Emin
+
 
