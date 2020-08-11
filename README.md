@@ -5,7 +5,7 @@ The main case of the datathon was an estimation of the number of future reservat
 This is the brief summary of our winning solution with the code for each step. Please visit the official datathon blog post for more details; 
 https://medium.com/@digitalinnovationthy/travel-datathon-2019-2a6b14cdcd7c
 
-![Winner Team!](winner_team.PNG)
+![Winner Team!](winner_team.JPG)
 
 Performance Metric: Root Mean Square Error (RMSE).
 
