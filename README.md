@@ -7,14 +7,14 @@ https://medium.com/@digitalinnovationthy/travel-datathon-2019-2a6b14cdcd7c
 
 ![Winner Team!](winner_team.JPG)
 
-## ** 1- Exploratory Data Analysis and Preprocessing **
+## **1- Exploratory Data Analysis and Preprocessing**
 When we examined the data we have, we applied certain methods in order to move faster since there are 90,562,838 rows of data. We converted the numerical variables that take up memory space from 64-bit to 32-bit to make the data take up less space. At the same time, we have saved more than 60% memory by converting "object" type variables to "category" type. In this way, we had the opportunity to test things faster.
 
 We saved 50% time by distributing the functions we wrote to different cores on the CPU in order to manipulate the data faster. On top of that, in order to test new variables and methods, we performed our tests on 9,056,283 rows of data by taking a sample of 10% of the total data with an even distribution of dates. We gradually improved our models by applying the methods and new variables that were successful in our tests to all data. We can understand that this method is consistent from the fact that the sample we took and the date distribution of all data are similar as seen in the graphic below.
 
 ![Sample Data Distribution](sample_distribution.png)
 
-## ** 2- Feature Engineering (feature_engineering.ipynb) **
+## **2- Feature Engineering (feature_engineering.ipynb)**
 Performance Metric was Root Mean Square Error (RMSE). Firstly, we obtained a model with an RMSE score of 2.628596 by applying the Lightgbm algorithm only over the given raw variables, and then we established our final model by testing different variables. The variables we use in our last model;
 
 ● Variables in raw data,
@@ -24,7 +24,7 @@ Performance Metric was Root Mean Square Error (RMSE). Firstly, we obtained a mod
 ● Time elapsed from the last flight based on Carrier, Origin, Hub and Destination and the time remaining to the next flight (Recency Features)
 ● Target encoding and frequency encoding variables over categorical variables such as Carrier, Origin, Hub and Destination (We will explain in detail below)
 
-## ** 3- Model Development (model_development.ipynb) **
+## **3- Model Development (model_development.ipynb)**
 Approximately 60% of the data consists of categorical variables with too many levers. When tree-based algorithms such as Lightgbm we use work on these types of variables, there is a risk of overfitting, so the target encoding method has been applied by applying the article with the reference below in order to digitize these non-numeric variables. The difference of this method from using the average number of passengers of each variable instead of the variable is to reduce the possibility of overfitting by multiplying it by the smoothing coefficient as in the method described below.
 
 ![Target Encoding Formula](target_encoding_formula.PNG)
