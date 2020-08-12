@@ -2,6 +2,8 @@
 
 We are proud of successfully winning the first place in Travel Datathon 2019 held at Atatürk Airport as part of the Aviation, Space and Technology Festival, "Teknofest Istanbul", between September 20-22 2019.
 
+Turkish Airlines is the national flag carrier airline of Turkey, which operates scheduled services to 315 destinations in Europe, Asia, Africa, and the Americas, making it the largest mainline carrier in the world by number of passenger destinations.
+
 The main case of the datathon was an estimation of the number of future reservations (PSGR_COUNT: Passengers Count) based on the historical reservation data of all airlines around the world, consisting of 90 million observations.
 
 This is the brief summary of our winning solution with the code for each step. Please visit the official datathon blog post for more details; 
